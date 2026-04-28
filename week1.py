@@ -97,7 +97,7 @@ Type casting:
     1. implicit
     2. explicit
 
-"""
+
 
 
 
@@ -113,6 +113,35 @@ print(km)
 mg = int(input("Enter your mg value: "))
 p  = mg * 0.00000220462  # mg to pounds
 print(p)
+"""
+
+# Ali is 40 years old where ahmed is elder than Ali
+# where farhan is younger than Ali
+
+
+#print(ali<ahmed and farhan < ali)
+
+
+# Zaid is 25 years old and elder than sara,
+# and sara is younger than both leo and maya,
+# while leo is older than sam;
+# this stats that sara is youngest,OR sam is younger than sara,
+# OR Maya is oldest than all
+
+zaid = 25
+sara = 20
+leo = 22
+maya = 23
+sam = 21
+
+print((zaid>sara and sara<leo and sara< maya and leo> sam)or sam < sara or
+      (maya>zaid>sara>leo>sam))
+
+
+
+
+
+
 
 
 
