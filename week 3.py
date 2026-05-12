@@ -94,7 +94,7 @@ print parameters:
      *
 """
 
-
+"""
 for i in range(1,6):
     print("-"*(5-i),end="")
     print("* "*i)
@@ -102,6 +102,29 @@ for i in range(1,6):
 for i in range(1,6):
     print("-"*i,end="")
     print("* "*(5-i))
+"""
+#task 1:
+#   ask user about a number and print factorial of that number
+"""
+number = int(input("Enter Your Number: "))
+fact = 1
+for i in range(number,0,-1):
+    fact = fact * i
+print(fact)
+"""
+
+#task 2:
+#   print a series of fibonacci " 0, 1, 1, 2, 3, 5, 8, 13, 21, 34"
+
+
+a = 0
+b = 1
+print(a,b, end = ",",sep = ",")
+for i in range(10):
+    c = a+b
+    print(c,end = ",")
+    a = b
+    b = c
 
 
 
