@@ -47,6 +47,13 @@ that user only.
 
 
 """
+Task:
+step1: create a multi dim list to store details of 3 cars for three companies.
+step2: Show user a menu for choosing any of the company name.
+step3: when user selects a company show a new menu for all available cars of
+that company.
+step4: when user selects any car print all details of that car.
+
 data = [[["Toyota","Corola","GLI","2007",900000],
          ["Toyota","Corola","GLI","2007",900000],
          ["Toyota","Corola","GLI","2007",900000]],
@@ -57,22 +64,19 @@ data = [[["Toyota","Corola","GLI","2007",900000],
          ["kia","sportage","alpha","2020",5000000],
          ["kia","sportage","alpha","2020",5000000]]]
 
+
+Required Output:
 Menu 1:
     1. Toyota
     2. Suzuki
     3. Kia
-    
+Enter your selection: 1
+
 Menu 2:
     1. Corola 1
     2. Corola 2
     3. Corola 3
-
-Task:
-step1: create a multi dim list to store details of 3 cars for three companies.
-step2: Show user a menu for choosing any ofthe company name.
-step3: when user selects a company show a new menu for all available cars of
-that company.
-step4: when user selects any car print all details of that car.
+Enter your selection: 2
         
 """
 
