@@ -103,16 +103,42 @@ List Methods:
 
 #print(mylist)
 
-set1 = {2,3,4,4,5,7,10}
-set2 = {3,8,9,6,11,15}
-print("set1:",set1)
-print("set2:",set2)
+#set1 = {2,3,4,4,5,7,10}
+#set2 = {3,8,9,6,11,15}
+#print("set1:",set1)
+#print("set2:",set2)
 
 #print(set1.union(set2))
 #print(set1.intersection(set2))
 #print(set2 - set1)
-print(set1.union(set2) - set1.intersection(set2))
-print(set1.symmetric_difference(set2))
+#print(set1.union(set2) - set1.intersection(set2))
+#print(set1.symmetric_difference(set2))
+
+"""
+List slicing:
+    Making subsets of a list.
+"""
+
+mylist = [2,3,5,6,8,10,18,29,25,28,30,36,39,22]
+
+#print(len(mylist))
+#mystr = "This is Yasir Nawaz"
+print(mylist[1:1:1])
+#print(mystr[:7])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
