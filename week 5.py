@@ -17,7 +17,7 @@ for row in data:
 
 
 
-
+"""
 userdata = [["Yasir","Nawaz","03000300000","abc@gmail.com","abc123"],
             ["Yasir1","Nawaz","03000300000","abc1@gmail.com","abc123"],
             ["Yasir2","Nawaz","03000300000","abc2@gmail.com","abc123"],
@@ -37,7 +37,7 @@ for user in userdata:
 else:
     print("User not found!")
 
-
+"""
 """
 create a multi dim list to store details for atleast 5 users.
 create two more variables useremail and userpass and take input from the user.
@@ -78,14 +78,60 @@ Menu 2:
     3. Corola 3
 Enter your selection: 2
         
-"""
-
-    
 
 
+data = [[["Toyota","Corola1","GLI","2007",900000],
+         ["Toyota","Corola2","GLI","2007",900000],
+         ["Toyota","Corola3","GLI","2007",900000]],
+        [["Suzuki","mehran1","vx","2010",1000000],
+         ["Suzuki","mehran2","vx","2010",1000000],
+         ["Suzuki","mehran3","vx","2010",1000000]],
+        [["kia","sportage1","alpha","2020",5000000],
+         ["kia","sportage2","alpha","2020",5000000],
+         ["kia","sportage3","alpha","2020",5000000]]]
+
+#company = [company[0][0] for company in data]
+
+for index, company in enumerate(data):
+    print(index+1, company[0][0])
+co = int(input("Enter your selection: "))
+if co < len(data):
+    print("*"*20)
+
+    for index, car in enumerate(data[co-1]):
+        print(index+1, car[1])
+    ca = int(input("Enter your selection: "))
+    if ca < len(data[co-1]):
+        print("*"*20)
+
+        print("Name:",data[co-1][ca-1][1])
+        print("Model:",data[co-1][ca-1][2])
+        print("Year:",data[co-1][ca-1][3])
+        print("price:",data[co-1][ca-1][4])
+    else:
+        print("Wrong Selection...")
+else:
+    print("Wrong Selection...")
+"""  
 #mylist = [3,6,8,9,0]
 #for i in mylist:
 #    print(i)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
