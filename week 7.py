@@ -34,18 +34,28 @@ String Functions:
 """
 
 
-print('my name is \'yas\rir\'')
-
-
-
-
-
-
-
-
-
-
-
+#print('my name is \'yas\rir\'')
+mystr = "my nAme Is Yasir"
+mystr2 = "abc123"
+#print(mystr.capitalize())
+#print(mystr.upper())
+#print(mystr.lower())
+#print(mystr.title())
+#print(mystr.swapcase())
+#print(mystr.count("aa"))
+#print(mystr.endswith("Y"))
+#print(mystr.startswith("y"))
+#print(mystr.find("t"))
+#print(mystr.index("t"))
+#print(mystr.isalpha())
+#print(mystr2.isnumeric())
+#print(mystr2.isalnum())
+#print(mystr.strip())
+#print(mystr.rstrip())
+#print(mystr.split("m"))
+#print(mystr.replace("Yasir","Ali"))
+#mylist = ["A","B","C"]
+#print("-".join(mylist))
 
 
 
