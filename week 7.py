@@ -35,8 +35,8 @@ String Functions:
 
 
 #print('my name is \'yas\rir\'')
-mystr = "my nAme Is Yasir"
-mystr2 = "abc123"
+# mystr = "my nAme Is Yasir"
+# mystr2 = "abc123"
 #print(mystr.capitalize())
 #print(mystr.upper())
 #print(mystr.lower())
@@ -57,6 +57,11 @@ mystr2 = "abc123"
 #mylist = ["A","B","C"]
 #print("-".join(mylist))
 
+name = "Yasir Nawaz"
+company = "SMIT"
+message = "My name is {n} and i work for {c}".format(c=company,n=name)
 
-
+message2 = f"My name is {name} and i work for {company}"
+print(message2)
+print(r"\nyasir\nnawaz")
 
