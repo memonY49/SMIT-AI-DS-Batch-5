@@ -95,8 +95,6 @@ elif userselection ==2:
         else:
             print("Student not found")
 
-
-
 elif userselection == 3:
     with open("data.csv","r") as file:
         for user in file.readlines():
@@ -114,6 +112,22 @@ elif userselection == 4:
     str_data  = [",".join(line)+"\n" for line in data]
     with open("data.csv","w") as file:
         file.writelines(str_data) 
-        
+
+elif userselection == 5:
+    id_to_update = input("Enter Student ID: ")
+    data = []
+    with open("data.csv","r") as file:
+        for user in file.readlines():
+            user = user.strip().split(',')
+            if user[0] == id_to_update:
+                user[1] = input("Enter Your Name to Update: ")
+                user[2] = input("Enter Your FName to Update: ")
+                user[3] = input("Enter Your Email to Update: ")
+                user[4] = input("Enter Your Password to Update: ")
+            data.append(user)
+    str_data  = [",".join(line)+"\n" for line in data]
+    with open("data.csv","w") as file:
+        file.writelines(str_data) 
+
 else:
     print("Wrong selection!!")
