@@ -19,9 +19,9 @@ import json
 # response = rs.get(api,params = param)
 # print(response.json())
 
-news_api = "https://newsapi.org/v2/everything"
+news_api = "https://newsapi.org/v2/everything?q=tesla&from=2026-05-30&sortBy=publishedAt&apiKey=f87045f00d5d4126a00db17a8340418d"
 
-response = rs.post(news_api, params={"apiKey": "ae1965e099324bce83e76f8ff2612fa9","q":"tesla"})
+response = rs.post(news_api)
 
 print(response.status_code)
 # response_dict = json.loads(response.json())
@@ -33,8 +33,8 @@ for index, art in enumerate(articles):
     if image != None:
         image_res = rs.get(image)
         if response.status_code == 200:
-            with open(f"images/image{index}.jpg","wb") as file:
-                file.write(response.content)
+            with open(f"image/image{index}.jpg","wb") as file:
+                file.write(image_res.content)
             print(f"{image} is downloaded")
     
 
