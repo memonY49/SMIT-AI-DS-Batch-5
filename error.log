@@ -1,0 +1,36 @@
+2026-07-26 21:51:44,186 - ERROR - decoraters.py - invalid literal for int() with base 10: 'hkbfjdsf'
+Traceback (most recent call last):
+  File "d:\salani\Batch 5\Oop Practice\decoraters.py", line 77, in wrapper
+    return func(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "d:\salani\Batch 5\Oop Practice\decoraters.py", line 90, in wrapper
+    return func(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "d:\salani\Batch 5\Oop Practice\decoraters.py", line 115, in withdraw
+    amount = int(input("Enter ammount for withdraw: "))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'hkbfjdsf'
+2026-07-26 21:55:33,492 - ERROR - decoraters.py - wrapper - invalid literal for int() with base 10: 'djkasdkjhd'
+Traceback (most recent call last):
+  File "d:\salani\Batch 5\Oop Practice\decoraters.py", line 77, in wrapper
+    return func(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "d:\salani\Batch 5\Oop Practice\decoraters.py", line 90, in wrapper
+    return func(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "d:\salani\Batch 5\Oop Practice\decoraters.py", line 123, in deposit
+    amount = int(input("Enter ammount for withdraw: "))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'djkasdkjhd'
+2026-07-26 21:56:41,358 - ERROR - decoraters.py - invalid literal for int() with base 10: 'bjhsfasdjhasd'
+Traceback (most recent call last):
+  File "d:\salani\Batch 5\Oop Practice\decoraters.py", line 77, in wrapper
+    return func(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "d:\salani\Batch 5\Oop Practice\decoraters.py", line 90, in wrapper
+    return func(*args,**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "d:\salani\Batch 5\Oop Practice\decoraters.py", line 123, in deposit
+    amount = int(input("Enter ammount for withdraw: "))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'bjhsfasdjhasd'
